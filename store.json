@@ -1,0 +1,43 @@
+[
+    {
+        "name": "cyber_theme",
+        "chinese_name": "赛博朋克风",
+        "author": "官方团队",
+        "description": "高对比度暗黑背景，隐藏路线详情，让地图与搜索变得纯粹。",
+        "version": "1.2.0",
+        "pattern": { 
+            "global": { "backgroundColor": "#121212" }, 
+            "components": { 
+                "#routePanel": { "action": "hide" },
+                ".point-row": { "action": "hide" }
+            } 
+        }
+    },
+    {
+        "name": "minimal_mode",
+        "chinese_name": "极简出行模式",
+        "author": "官方团队",
+        "description": "去除一切干扰元素，隐藏周边探索和路线面板，只保留地图与全局搜索。",
+        "version": "1.0.1",
+        "pattern": { 
+            "components": { 
+                ".map-wrap ~ div": { "action": "hide" },
+                "#routePanel": { "action": "hide" },
+                ".point-row": { "action": "hide" }
+            } 
+        }
+    },
+    {
+        "name": "big_text_mode",
+        "chinese_name": "长辈关怀模式",
+        "author": "官方团队",
+        "description": "放大全局字体，隐藏复杂交互，适合视力不佳的用户使用。",
+        "version": "1.0.0",
+        "pattern": { 
+            "global": { "borderRadius": "8px" },
+            "components": {
+                ".point-text": { "action": "hide" }
+            }
+        }
+    }
+]
